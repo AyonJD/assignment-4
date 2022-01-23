@@ -6,9 +6,8 @@ body{
     --primary: #FA804C;
     --text_color: #363958;
     --btn_color: linear-gradient(to right, #FA804C 50%, #3746C9);
-    -
 }
-/* Common Classes */
+/* Start Common Classes */
 .header-color{
     color: var(--primary);
 }
@@ -21,8 +20,23 @@ body{
 .custom-btn-color:hover{
     background-position: right;
 }
+/* Start custom css */
+.custom-bg-header{
+    background-color: #FFF9F4;
+}
+.card img{
+    transition: all .3s ease;
+}
+.card img:hover{
+    transform: scale(1.2) 
+    rotate(-10deg);
+}
+.card .formal:hover{
+    transform: scale(1.1)
+    rotate(5deg);
+}
 
-
+/* Start Media Query */
 @media only screen and (min-width: 576px){
     .navbar-brand img{
         width: 292px;
@@ -42,9 +56,10 @@ body{
     .banner-text h1{
         font-size: 3rem;
     }
-}
-@media only screen and (min-width: 992px){
     .banner{
         height: calc(100vh - 66px) !important;
     }
+}
+@media only screen and (min-width: 992px){
+    
 }
