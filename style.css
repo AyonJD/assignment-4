@@ -1,4 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
 body{
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
+}
+:root{
+    --primary: #FA804C;
+    --text_color: #363958;
+    --btn_color: linear-gradient(to right, #FA804C 50%, #3746C9);
+    -
+}
+/* Common Classes */
+.header-color{
+    color: var(--primary);
+}
+.custom-btn-color{
+    background-image: var(--btn_color);
+    background-position: left;
+    background-size: 300%;
+    transition: background-position .3s ease-in-out;
+}
+.custom-btn-color:hover{
+    background-position: right;
+}
+
+
+@media only screen and (min-width: 576px){
+    .navbar-brand img{
+        width: 292px;
+    }
+    .custom-bg-md{
+        background-color: transparent !important;
+    }
+    .custom-bg-md a{
+        color: var(--text_color) !important;
+        font-weight: bold;
+    }
+    .banner-text h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 768px){
+    .banner-text h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 992px){
+    .banner{
+        height: calc(100vh - 66px) !important;
+    }
 }
